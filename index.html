@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SXS  Kompas</title>
+    <link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
     <script src="https://kit.fontawesome.com/c2d1548060.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <style>
+    .navbar {
+        text-align: center;
+    }
+    header{
+        font-family: 'armystampmedium';
+        font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    }
     .on-top-of-page{
         text-align: center;
         background-color: black;
@@ -17,37 +29,53 @@
         background-color: #707070;
         color: white;
     }
-
-    /* .cover .img {
-        max-width: 100%;
-        max-height: 100%;
-    } */
-    /* .cover {
-        height: 650px;
-        background-image: url("sxsmainpage.jpg");
-        width: 100%;
-        position: relative;
-        background-repeat: no-repeat;
-        background-color: black;
-    } */
     .cover {
         background-color: black;
         position: relative;
-  text-align: center;
-  font-size: 40px;
-  color: white;
+        text-align: center;
+        font-size: 40px;
+        color: white;
     }
     .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-us {
+        text-align: center;
+        background-color: #FFFFFF;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .social-media{
+        background-color: #E4E4E4;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+
+    }
+
+    .sign-up-email{
+        text-align: center;
+        background-color: #707070;
+        height: 150px;
+        display: flex;
+        align-items: center;
+
+    }
+    body {
+        background-color: black;
+    }
 </style>
 </head>
 <body>
 <header>
-    <h1 class="on-top-of-page">SXS Kompas</h1>
+    <p class="on-top-of-page">SXS Kompas</p>
 
 </header> 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -83,27 +111,59 @@
         <li class="nav-item">
           <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Gallery</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i></a>
+        </li>
       </ul>
     </div>
   </nav>
   <div class="discount">
-      <p>Recieve 10% off your order this month!</p>
+      <p style="margin-bottom: 0;">Recieve 10% off your order this month!</p>
   </div>
 <div class="cover">
     <img src="sxsmainpage.jpg" alt="" width="100%" height="100%">
     <div class="centered">SXS Kompas translates to  SXS Friends</div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <p>Follow us on social media</p>
-        </div>
-        <div class="col">
-            <i class="fab fa-instagram-square"></i>
-            <i class="fab fa-facebook-square"></i>
+<div class="social-media">
+    <div class="container">
+        <div class="row " >
+            <div class="col">
+                <p>Follow us on social media</p>
+            </div>
+            <div class="col">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
         </div>
     </div>
 </div>
+
+
+    <div class="about-us">
+        <div class="container">
+            <h3>About Us</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis nihil voluptatem vitae atque doloremque culpa ipsam illo amet quisquam in deserunt possimus, perspiciatis autem fugiat! Incidunt repellat unde consequuntur.</p>
+        </div>
+
+    </div>
+
+
+    <div class="sign-up-email">
+        <div class="container">
+            <p>Become a SXS Kompa member <br>
+            Be the first to see new products and exclusive gear!</p>
+            <form action="">
+                <input type="email" placeholder="Email Address">
+                <button>Sign up</button>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+
+    </footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
